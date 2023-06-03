@@ -77,9 +77,9 @@ function getApi(citySearch) {
             var weather = document.createElement("p");
 
             city.textContent = weatherAr[i].name;
-            temp.textContent = weatherAr[i].temp;
+            temp.textContent = `Temperature: ${weatherAr[i].temp}`;
             time.textContent = weatherAr[i].time;
-            weather.textContent = weatherAr[i].weather;
+            weather.textContent = `Weather: ${weatherAr[i].weather}`;
 
             container.append(div);
             div.append(city);
